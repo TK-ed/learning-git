@@ -8,9 +8,9 @@ app = FastAPI()
 # @app.get('/{name}')
 # def user(name: str):
 #     return name
-@app.get('/{name}')
-def user(name: str):
-    return name
+@app.get('/')
+def user():
+    return "name"
 
 
 if __name__=="__main__":
